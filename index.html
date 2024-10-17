@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Seleção de Casa</title>
+</head>
+
+<body>
+  <div class="form">
+    <form>
+      <div>
+        <label for="name" class="form-label">Nome Completo: </label>
+        <input type="text" class="form-control" aria-label="default input example" placeholder="Seu nome completo"
+          id="name">
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="name-mom" class="form-label">Sobrenome da Mãe: </label>
+          <input type="text" class="form-control" aria-label="default input example" placeholder="Sobrenome da sua Mãe"
+            id="name-mom">
+        </div>
+
+        <div>
+          <p>Sua mãe é:</p>
+          <input type="radio" id="type-mom-muggle" name="mom">
+          <label for="type-mom-muggle">Trouxa</label>
+
+          <input type="radio" id="type-mom-witcher" name="mom">
+          <label for="type-mom-witcher">Bruxo</label>
+        </div>
+
+        <div>
+          <label for="name-dad" class="form-label">Sobrenome do Pai: </label>
+          <input type="text" class="form-control" aria-label="default input example" placeholder="Sobrenome do seu Pai"
+            id="name-dad">
+        </div>
+
+        <div>
+          <p>Seu pai é:</p>
+          <input type="radio" id="type-dad-muggle" name="father">
+          <label for="type-dad-muggle">Trouxa</label>
+
+          <input type="radio" id="type-dad-witcher" name="father">
+          <label for="type-dad-witcher">Bruxo</label>
+        </div>
+      </div>
+
+      <div class="quest">
+        <div>
+          <p>Questionário para ingressar em Hogwarts:</p>
+        </div>
+
+        <p id="perg1"></p>
+        <div>
+          <input type="radio" id="pergunta1.1" name="gryff1" value="Enfrentar o perigo de frente.">
+          <label for="pergunta1.1">Enfrentar o perigo de frente.</label>
+
+          <input type="radio" id="pergunta1.2" name="gryff1"
+            value="Procuro uma maneira estratégica de lidar com a situação.">
+          <label for="pergunta1.2">Procuro uma maneira estratégica de lidar com a situação.</label>
+        </div>
+
+        <p id="perg2"></p>
+        <div>
+          <input type="radio" id="pergunta2.1" name="gryff2" value="Entro em ação para ajudar, sem hesitar.">
+          <label for="pergunta2.1">Entro em ação para ajudar, sem hesitar.</label>
+
+          <input type="radio" id="pergunta2.2" name="gryff2"
+            value="Analiso a situação antes de intervir, mas estou disposto a ajudar.">
+          <label for="pergunta2.2">Analiso a situação antes de intervir, mas estou disposto a ajudar.</label>
+        </div>
+
+        <p id="perg3"></p>
+        <div>
+          <input type="radio" id="pergunta3.1" name="sly1" value="Uso de maneira estratégica para crescer.">
+          <label for="pergunta3.1">Uso de maneira estratégica para crescer.</label>
+
+          <input type="radio" id="pergunta3.2" name="sly1" value="Aproveito sem hesitar para alcançar o sucesso.">
+          <label for="pergunta3.2">Aproveito sem hesitar para alcançar o sucesso.</label>
+        </div>
+
+        <p id="perg4"></p>
+        <div>
+          <input type="radio" id="pergunta4.1" name="sly2"
+            value="Faria o que fosse necessário para conquistar o poder.">
+          <label for="pergunta4.1">Faria o que fosse necessário para conquistar o poder.</label>
+
+          <input type="radio" id="pergunta4.2" name="sly2"
+            value="Encontraria uma maneira de conseguir o poder sem perder o que é importante.">
+          <label for="pergunta4.2">Encontraria uma maneira de conseguir o poder sem perder o que é
+            importante.</label>
+        </div>
+
+        <p id="perg5"></p>
+        <div>
+          <input type="radio" id="pergunta5.1" name="raven1" value="Uso lógica e raciocínio para resolvê-lo.">
+          <label for="pergunta5.1">Uso lógica e raciocínio para resolvê-lo.</label>
+
+          <input type="radio" id="pergunta5.2" name="raven1"
+            value="Confio na minha intuição para encontrar a resposta.">
+          <label for="pergunta5.2">Confio na minha intuição para encontrar a resposta.</label>
+        </div>
+
+        <p id="perg6"></p>
+        <div>
+          <input type="radio" id="pergunta6.1" name="raven2" value="Através de pesquisa metódica e profunda.">
+          <label for="pergunta6.1">Através de pesquisa metódica e profunda.</label>
+
+          <input type="radio" id="pergunta6.2" name="raven2" value="Explorando ideias criativamente.">
+          <label for="pergunta6.2">Explorando ideias criativamente.</label>
+        </div>
+
+        <p id="perg7"></p>
+        <div>
+          <input type="radio" id="pergunta7.1" name="huffle1"
+            value="Trabalho duro e perseverante até completar a tarefa, mesmo que leve tempo.">
+          <label for="pergunta7.1">Trabalho duro e perseverante até completar a tarefa, mesmo que leve
+            tempo.</label>
+
+          <input type="radio" id="pergunta7.2" name="huffle1"
+            value="Procuro apoio do grupo para que possamos superar juntos.">
+          <label for="pergunta7.2">Procuro apoio do grupo para que possamos superar juntos.</label>
+        </div>
+
+        <p id="perg8"></p>
+        <div>
+          <input type="radio" id="pergunta8.1" name="huffle2"
+            value="A lealdade e a capacidade de trabalhar juntos em harmonia.">
+          <label for="pergunta8.1">A lealdade e a capacidade de trabalhar juntos em harmonia.</label>
+
+          <input type="radio" id="pergunta8.2" name="huffle2"
+            value="Que todos estejam dispostos a se esforçar e contribuir igualmente.">
+          <label for="pergunta8.2">Que todos estejam dispostos a se esforçar e contribuir igualmente.</label>
+        </div>
+      </div>
+
+      <div class="send-button">
+        <button type="button" id="chosen-button" class="btn btn-success" onclick="houseChosen()">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <div class="hogwarts">
+    <p>Hogwarts</p>
+    <p>Escola para Bruxos</p>
+    <img src="images/hog.png" alt="hogwarts">
+  </div>
+
+  <div class="slytherin">
+    <p class="showName"></p>
+    <p>Sonserina</p>
+    <img src="images/sly.jpeg" alt="Sonserina">
+  </div>
+  <div class="gryffindor">
+    <p class="showName"></p>
+    <p>Grifinória </p>
+    <img src="images/gryff.jpeg" alt="Grifinória">
+  </div>
+  <div class="hufflepuff">
+    <p class="showName"></p>
+    <p>Lufa-Lufa</p>
+    <img src="images/huffle.jpeg" alt="Lufa-Lufa">
+  </div>
+  <div class="ravenclaw">
+    <p class="showName"></p>
+    <p>Corvinal</p>
+    <img src="images/raven.jpeg" alt="">
+  </div>
+  <div class="excluido">
+    <p></p>
+    <p>Que pena, não foi dessa vez.</p>
+    <p>Tente novamente ano que vem!</p>
+    <img src="images/nt.jpeg" alt="">
+  </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
